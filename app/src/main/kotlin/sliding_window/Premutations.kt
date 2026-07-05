@@ -23,9 +23,9 @@ class Premutations {
         val s1Count = IntArray(26)
         val windowCount = IntArray(26)
 
-        for (left in 0 until  s1.length) {
-            s1Count[s1[left]- 'a']++
-            windowCount[s1[left]- 'a']++
+        for (i in 0 until  s1.length) {
+            s1Count[s1[i]- 'a']++
+            windowCount[s2[i]- 'a']++
         }
 
         if (s1Count.contentEquals(windowCount)) return true
