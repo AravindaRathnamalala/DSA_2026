@@ -11,8 +11,8 @@ class ValidPerfectSquare {
             val square = mid.toLong() * mid
              when{
                  square == num.toLong() -> return true
-                 square < num -> right = mid - 1
-                 square > num -> left = mid + 1
+                 square < num -> left = mid + 1
+                 square > num -> right = mid - 1
              }
         }
         return false
