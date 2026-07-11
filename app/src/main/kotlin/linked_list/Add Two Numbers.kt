@@ -23,4 +23,8 @@ class `Add Two Numbers` {
 
         return head.next
     }
+
 }
+
+//Time complexity: O(n+m)
+//Space complexity: O(5) ~ o(1)
