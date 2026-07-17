@@ -7,7 +7,6 @@ class KthLargest(private val k: Int, nums: IntArray) {
     val pq = PriorityQueue<Int>()
 
     init {
-
         for(num in nums) {
             add(num)
         }
