@@ -5,7 +5,7 @@ import TreeNode
 class BFS {
 
     fun bfsOnTree(root: TreeNode) {
-        if (root.left != null) return
+        if (root == null) return
         val queue = ArrayDeque<TreeNode>()
         queue.add(root)
         while (queue.isNotEmpty()) {
