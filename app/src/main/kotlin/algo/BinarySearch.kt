@@ -19,7 +19,7 @@ class BinarySearch {
 
 
     fun binarySearchWithRecursion(nums: IntArray, target: Int, left: Int, right: Int) : Int {
-        if (left >= right) return -1
+        if (left > right) return -1
         val mid  = left+ (left - right)/2
         return when{
             nums[mid] == target -> mid
