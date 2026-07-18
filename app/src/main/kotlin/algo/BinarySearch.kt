@@ -17,14 +17,13 @@ class BinarySearch {
         return -1
     }
 
-
     fun binarySearchWithRecursion(nums: IntArray, target: Int, left: Int, right: Int) : Int {
         if (left > right) return -1
         val mid  = left+ (left - right)/2
         return when{
             nums[mid] == target -> mid
-            nums[mid] > target -> binarySearchWithRecursion(nums, target, mid + 1, right)
-            else -> binarySearchWithRecursion(nums, target, mid - 1, right)
+            nums[mid] > target -> binarySearchWithRecursion(nums, target, left, mid - 1)
+            else -> binarySearchWithRecursion(nums, target, mid + 1, right)
         }
     }
 }
